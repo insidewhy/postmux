@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Post multiplexer</title>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <style>
+      li a {
+        margin-left: 5px;
+      } 
+    </style>
+  </head>
+  <body>
+    <h1>Post multiplexer</h1>
+    <h2>Endpoints</h2>
+    <form id="endpoint-form">
+      <label for="url">Add:</label>
+      <input placeholder="New Endpoint" type="text" name="url" length="100" />
+      <input type="submit" value="Add" />
+    </form>
+    <ul id="endpoints">
+    </ul>
+    <p>Post requests to /post to multiplex data to all endpoints.</p>
+
+    <h2>Test Form</h2>
+    <form id="test-form">
+      <label for="data">Data:</label>
+      <input placeholder="Raw postdata" type="text" name="data" length="100" />
+      <input type="submit" value="Post" />
+    </form>
+  </body>
+</html>
